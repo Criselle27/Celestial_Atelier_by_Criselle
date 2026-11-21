@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celestial Atelier by Criselle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== TOP NAVIGATION ==================== -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#top" class="brand-emblem" aria-label="Celestial Atelier Home">
+        <img src="images/icon-logo.png" alt="Celestial Atelier Logo" />
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#products">PRODUCTS</a></li>
+          <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="search" id="searchInput" placeholder="Search..." aria-label="Search jewelry and crochet" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      </div>
+
+      <button class="icon-btn cart-btn" type="button" id="cartBtn" aria-label="Shopping Cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <circle cx="9" cy="20" r="1.5" />
+          <circle cx="18" cy="20" r="1.5" />
+          <path d="M2.5 3.5h3l2.2 11.5h11.3l2-8.5H6.5" />
+        </svg>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+
+      <button class="icon-btn" type="button" id="accountBtn" aria-label="Account">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <circle cx="12" cy="12" r="9.5" />
+          <circle cx="12" cy="9.5" r="3" />
+          <path d="M6.5 18.5c1.3-2.3 3.2-3.5 5.5-3.5s4.2 1.2 5.5 3.5" />
+        </svg>
+      </button>
+
+      <button class="icon-btn" type="button" id="menuBtn" aria-label="Open Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6.5" x2="21" y2="6.5" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="17.5" x2="21" y2="17.5" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <h1 class="hero-title">CELESTIAL</h1>
+        <div class="hero-subtitle-row">
+          <span class="hero-title">ATELIER</span>
+          <span class="hero-script">by Criselle</span>
+        </div>
+        <p class="hero-copy">
+          Inspired by the beauty of the night sky, every piece in our shop is handcrafted with
+          care, patience, and love. We specialize in intricate beaded jewelry and artisanal
+          crochet accessories designed to bring a touch of cosmic magic to your everyday style.
+        </p>
+        <div class="hero-actions">
+          <button type="button" class="btn-pill" data-auth="signin">Sign in</button>
+          <button type="button" class="btn-pill" data-auth="signup">Sign up</button>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img
+          src="images/hero-craft.png"
+          alt="Celestial Atelier by Criselle handmade floral beaded bracelet and yarn"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+
+        <!-- Left: Craft Photo -->
+        <div class="about-image">
+            <img src="images/about-us.png" alt="Handcrafting beaded jewelry">
+        </div>
+
+        <!-- Middle: Heading, Copy & Button -->
+        <div class="about-content">
+            <h2>ABOUT US</h2>
+            <p>
+                Celestial Atelier was born out of a deep passion for tactile artistry—bringing together the delicate precision of beaded jewelry and the cozy, intricate charm of crochet creations.
+            </p>
+            <p>
+                What started as a personal passion project quickly grew into a studio dedicated to making wearable art. Every piece in our collection—from sparkling seed-bead accessories to soft, hand-stitched crochet items—is crafted by hand with careful attention in detail, quality materials, and a touch of celestial wonder.
+            </p>
+            
+            <a href="#more" class="btn-know-more">Know more...</a>
+        </div>
+
+        <!-- Right: 3 Feature Columns -->
+        <div class="about-features">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/icon-diamond.png" alt="100% Handcrafted">
+                </div>
+                <h3>100% Handcrafted</h3>
+                <p>Every piece is meticulously made by hand with care, patience, and love. No mass production.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/icon-yarn.png" alt="Quality Materials">
+                </div>
+                <h3>Quality Materials</h3>
+                <p>We select durable glass beads, premium yarn, and sturdy hardware built for lasting wear.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/icon-gift.png" alt="Thoughtfully Gifted">
+                </div>
+                <h3>Thoughtfully Gifted</h3>
+                <p>Each order comes packaged in custom aesthetic wrapping, ready to gift to loved ones or treat yourself.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+  <!-- ==================== BEADED JEWELRY SHOWCASE ==================== -->
+<!-- =========== PRODUCT SHOWCASE SLIDER =========== -->
+      <section class="jewelry-section products-section" id="products">
+        <div class="showcase-slider" id="bannerSlider">
+          <div class="showcase-track" id="bannerTrack">
+
+            <!-- SLIDE 1: BEADED JEWELRY (Original Layout) -->
+            <div class="showcase-slide">
+              <div class="jewelry-inner">
+                <div class="jewelry-info">
+                  <div class="jewelry-text-group">
+                    <h2 class="jewelry-heading">BEADED<br />JEWELRY</h2>
+                    <p class="jewelry-sub">
+                      Intricately woven beads designed to capture starlight
+                    </p>
+                  </div>
+                  <a href="#collection-beaded" class="btn-explore">EXPLORE COLLECTION</a>
+                </div>
+
+                <div class="jewelry-grid" id="collection-beaded">
+                  <div class="jewelry-card" data-title="Floral Beaded Bracelet" data-price="₱380">
+                    <img src="images/jewelry-1.png" alt="Jewelry Piece 1 - Floral Beaded Bracelet" />
+                  </div>
+                  <div class="jewelry-card" data-title="Pastel Charm Bracelet" data-price="₱420">
+                    <img src="images/jewelry-2.png" alt="Jewelry Piece 2 - Pastel Beaded Charm Bracelet" />
+                  </div>
+                  <div class="jewelry-card" data-title="Celestial Garden Bracelet" data-price="₱450">
+                    <img src="images/jewelry-3.png" alt="Jewelry Piece 3 - Celestial Garden Beaded Bracelet" />
+                  </div>
+                  <div class="jewelry-card" data-title="Layered Pearl & Gold Necklace" data-price="₱590">
+                    <img src="images/jewelry-4.png" alt="Jewelry Piece 4 - Layered Pearl & Gold Necklace" />
+                  </div>
+                  <div class="jewelry-card" data-title="Blush Seed-Bead Necklace" data-price="₱540">
+                    <img src="images/jewelry-5.png" alt="Jewelry Piece 5 - Delicate Blush Beaded Necklace" />
+                  </div>
+                  <div class="jewelry-card" data-title="Starlight Blue Layered Necklace" data-price="₱620">
+                    <img src="images/jewelry-6.png" alt="Jewelry Piece 6 - Starlight Blue Beaded Necklace" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: CROCHET WEARABLES -->
+            <div class="showcase-slide">
+              <div class="jewelry-inner">
+                <div class="jewelry-info">
+                  <div class="jewelry-text-group">
+                    <h2 class="jewelry-heading">CROCHET<br />WEARABLES</h2>
+                    <p class="jewelry-sub">
+                      Soft, delicate crochet keychains and wearables made stitch by stitch
+                    </p>
+                  </div>
+                  <a href="#collection-crochet" class="btn-explore">EXPLORE COLLECTION</a>
+                </div>
+
+                <div class="jewelry-grid" id="collection-crochet">
+                  <div class="jewelry-card" data-title="Crochet Item 1" data-price="₱350">
+                    <img src="images/jewelry-1.png" alt="Crochet Piece 1" />
+                  </div>
+                  <div class="jewelry-card" data-title="Crochet Item 2" data-price="₱390">
+                    <img src="images/jewelry-2.png" alt="Crochet Piece 2" />
+                  </div>
+                  <div class="jewelry-card" data-title="Crochet Item 3" data-price="₱420">
+                    <img src="images/jewelry-3.png" alt="Crochet Piece 3" />
+                  </div>
+                  <div class="jewelry-card" data-title="Crochet Item 4" data-price="₱480">
+                    <img src="images/jewelry-4.png" alt="Crochet Piece 4" />
+                  </div>
+                  <div class="jewelry-card" data-title="Crochet Item 5" data-price="₱510">
+                    <img src="images/jewelry-5.png" alt="Crochet Piece 5" />
+                  </div>
+                  <div class="jewelry-card" data-title="Crochet Item 6" data-price="₱550">
+                    <img src="images/jewelry-6.png" alt="Crochet Piece 6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: BEST SELLERS -->
+            <div class="showcase-slide">
+              <div class="jewelry-inner">
+                <div class="jewelry-info">
+                  <div class="jewelry-text-group">
+                    <h2 class="jewelry-heading">BEST<br />SELLERS</h2>
+                    <p class="jewelry-sub">
+                      Our most-loved celestial pieces curated just for you
+                    </p>
+                  </div>
+                  <a href="#collection-bestsellers" class="btn-explore">EXPLORE COLLECTION</a>
+                </div>
+
+                <div class="jewelry-grid" id="collection-bestsellers">
+                  <div class="jewelry-card" data-title="Best Seller 1" data-price="₱450">
+                    <img src="images/jewelry-4.png" alt="Best Seller 1" />
+                  </div>
+                  <div class="jewelry-card" data-title="Best Seller 2" data-price="₱590">
+                    <img src="images/jewelry-5.png" alt="Best Seller 2" />
+                  </div>
+                  <div class="jewelry-card" data-title="Best Seller 3" data-price="₱620">
+                    <img src="images/jewelry-6.png" alt="Best Seller 3" />
+                  </div>
+                  <div class="jewelry-card" data-title="Best Seller 4" data-price="₱380">
+                    <img src="images/jewelry-1.png" alt="Best Seller 4" />
+                  </div>
+                  <div class="jewelry-card" data-title="Best Seller 5" data-price="₱420">
+                    <img src="images/jewelry-2.png" alt="Best Seller 5" />
+                  </div>
+                  <div class="jewelry-card" data-title="Best Seller 6" data-price="₱450">
+                    <img src="images/jewelry-3.png" alt="Best Seller 6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Left / Right Arrows -->
+          <button class="banner-arrow prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+          <button class="banner-arrow next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+
+          <!-- Pagination Dots -->
+          <div class="banner-dots" id="bannerDots">
+            <button class="banner-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="banner-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="banner-dot" data-index="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </section>
+  <!-- ==================== TRUST / PROMISE STRIP ==================== -->
+  <section class="trust-strip" aria-label="Shop Guarantees">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <img src="images/icon-ship.png" alt="" class="trust-icon" />
+        <div>
+          <div class="trust-title">FREE SHIPPING</div>
+          <div class="trust-sub">on orders over ₱500</div>
+        </div>
+      </div>
+
+      <div class="trust-item">
+         <img src="images/credit-card 1.png" alt="" class="trust-icon" />
+        <div>
+          <div class="trust-title">SECURE PAYMENTS</div>
+          <div class="trust-sub">100% secured checkout</div>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <img src="images/icon-refund.png" alt="" class="trust-icon" />
+        <div>
+          <div class="trust-title">HASSLE FREE RETURNS</div>
+          <div class="trust-sub">7-day easy return</div>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <img src="images/Ellipse 12.png" alt="" class="trust-icon" />
+        <div>
+          <div class="trust-title">NEED HELP?</div>
+          <div class="trust-sub">Always here to help</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+<!-- ================== FOOTER ================== -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <!-- Column 1: Brand + Social Icons -->
+      <div class="footer-brand-col">
+        <div class="footer-crest" aria-hidden="true">
+          <img src="images/logo.png" alt="Celestial Atelier by Criselle" />
+        </div>
+        <div class="footer-brand-name">CELESTIAL ATELIER BY CRISELLE</div>
+        <div class="footer-tagline">Handmade Under the Stars</div>
+
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/1JsZ8XFrC1/" target="_blank" rel="noopener noreferrer" class="social-badge" aria-label="Facebook">
+            <img src="images/icon-fb.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/__i_e__e?jplx=dHdkNm0zZjJ1ZGp2" target="_blank" rel="noopener noreferrer" class="social-badge" aria-label="Instagram">
+            <img src="images/icon-ig.png" alt="Instagram" />
+          </a>
+          <a href="mailto:crisellejoycecariaga@gmail.com" class="social-badge" aria-label="Email">
+            <img src="images/icon-email.png" alt="Email" />
+          </a>
+          <a href="tel:+639052640304" class="social-badge" aria-label="Phone">
+            <img src="images/icon-phone.png" alt="Phone" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: SHOP -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">SHOP</h3>
+        <ul class="footer-links">
+          <li><a href="#products">All Products</a></li>
+          <li><a href="#best-sellers">Best Sellers</a></li>
+          <li><a href="#beaded-accessories">Beaded Accessories</a></li>
+          <li><a href="#beaded-jewelry">Beaded Jewelry</a></li>
+          <li><a href="#crochet-keychains">Crochet Keychains</a></li>
+          <li><a href="#crochet-wearables">Crochet Wearables</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: COMPANY -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">COMPANY</h3>
+        <ul class="footer-links">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#our-materials">Our Materials</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+          <li><a href="#customer-reviews">Customer Reviews</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: CUSTOMER CARE -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">CUSTOMER CARE</h3>
+        <ul class="footer-links">
+          <li><a href="#shipping-delivery">Shipping &amp; Delivery</a></li>
+          <li><a href="#returns-refunds">Returns &amp; Refunds</a></li>
+          <li><a href="#track-order">Track Your Order</a></li>
+          <li><a href="#wholesale-bulk-order">Wholesale / Bulk Order</a></li>
+          <li><a href="#careers">Careers / Join Our Team</a></li>
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#terms-and-conditions">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-links">
+        <a href="#do-not-sell">Do not sell our personal information</a>
+      </div>
+      <p class="footer-copyright">
+        Copyright &copy; 2026 Celestial Atelier by Criselle Operating Company, LLC. All Rights Reserved.
+      </p>
+      <p class="footer-terms">
+        Use of this site is subject to express terms of use. By using this site, you signify that you agree to be bound by these Universal Terms of Service.
+      </p>
+    </div>
+  </div>
+</footer>
+  <!-- ==================== MODAL FOR AUTH / CART / PRODUCT PREVIEW ==================== -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+      <h3 class="modal-title" id="modalTitle">Welcome</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
